@@ -1,0 +1,31 @@
+//px, rem. Sizes
+//1rem is 16 pixels
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+    //Base 10 system with rem.
+    font-size: 62.5%
+}
+
+body {
+    //Choose Helvetica. If it doesn't exist, choose the remaining.
+    font-family: Helvetica, Arial, sans-serif;
+    //This will translate to 16 pixels
+    font-size: $m-size;
+}
+
+//Target all buttons
+button {
+    //Hand
+    cursor: pointer;
+}
+
+button:disabled{
+    cursor:default;
+}
+
+.is-active {
+    font-weight: bold;
+}
